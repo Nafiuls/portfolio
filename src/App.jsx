@@ -1,8 +1,14 @@
+import { useEffect, useState } from "react"
 import About from "./Components/About"
+import Contact from "./Components/Contact"
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
+import Projects from "./Components/Projects"
+import Technologies from "./Components/Technologies"
+import { motion } from "framer-motion"
 
 function App() {
+
 
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased  selection:bg-cyan-300  selection:bg-cyan-900">
@@ -14,8 +20,12 @@ function App() {
         <Navbar></Navbar>
         <Hero></Hero>
         <About />
+        <Technologies />
+        <Projects />
+        <Contact />
       </div>
-    </div>
+
+    </div >
   )
 }
 
